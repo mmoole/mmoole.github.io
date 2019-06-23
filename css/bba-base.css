@@ -1,0 +1,162 @@
+/* via Bibbase: */
+
+#bibbase_header  {
+   display:none;
+}
+
+
+.bibbase_group {
+    background-color: transparent;
+    font-style: italic;
+    font-size: larger;
+    text-shadow: 0px 0px 3px #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px;
+    padding: 5px 4px 2px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    cursor: pointer;
+
+
+}
+
+#bibbase_header a[onclick="groupby('downloads')"] {
+    display: none;
+}
+
+
+.bibbase_group_body {
+    margin-left: 50px;
+
+}
+
+span.bibbase_icon_text {
+    display: none;
+}
+
+.bibbase_code {
+    width: 80%
+}
+
+.comment {
+    font-size: smaller;
+    font-style: italic;
+    color: gray;
+}
+
+.recommended {
+    color: green;
+}
+
+/* bootstrap */
+
+.bibbase_msg {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+}
+
+#bibbase_embed_modal {
+    width: 70%;
+    left: 15%;
+    margin: 0;
+}
+
+.bibbase.well {
+    margin: 20px;
+    overflow-wrap: break-word;
+    font-size: 20px;
+}
+
+.bibbase.link {
+    text-decoration: none;
+
+}
+
+.bibbase_paper_content {
+    font-size: smaller;
+    font-family: sans-serif;
+    color: dimgray;
+}
+
+.bibbase_paper_title a {
+    pointer-events: inherit;
+    color: black;
+    font-weight: bold;
+
+}
+
+.bibbase_paper_author a {
+    pointer-events: none;
+    color: black;
+
+}
+
+.dropdown-toggle {
+    display: none;
+}
+
+
+.bibbase_paper_content {
+    font-size: smaller;
+
+}
+/*.bibbase_icon{
+    content:url("https://bibbase.org/img/filetypes/link.svg");
+
+}*/
+img.bibbase_icon {
+    width: 20px;
+    max-height: 16px;
+    vertical-align: text-top;
+
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6+ */
+}
+
+img.bibbase_icon:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+.bg-img {
+  /* The image used */
+  background-image: url("/img/K1.png");
+
+  /*min-height: 380px;*/
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+
+
+/*  Anpassungen  */
+
+/* .groupby_dropdown {
+  display: none;
+} */
+
+a.bibbase.bibtex.link {
+    display: none !important;
+}
+
+#bibbase_header a[onclick="groupby('downloads')"] { display: none; }
+/* #bibbase_header a[onclick="groupby('author')"] { display: none; }
+#bibbase_header a[onclick="groupby('keyword')"] { display: none; } */
+
+
+.bibbase_paper_title a{ pointer-events: none; }
+
+/*  */
