@@ -1,4 +1,4 @@
-/* via Bibbase: */
+/* via Bibbase - many thanks to BibBase!: */
 
 #bibbase_header  {
    display:none;
@@ -62,7 +62,7 @@
 .bibbase.well {
     margin: 20px;
     overflow-wrap: break-word;
-    font-size: 20px;
+    font-size: inherit;
 }
 
 .bibbase.link {
