@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>C2C flavored search engine experiment</title>
+  <script async src="https://cse.google.com/cse.js?cx=011350583942115285058:l0orpg8qgc5"></script>
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js"></script>
+
+  <style>
+    body {
+      background-color: white;
+      margin: none;
+    }
+
+    body,
+    h3,
+    p {
+      font-family: "Raleway", sans-serif;
+      color: black;
+    }
+
+    .suchbox_ergebnisse,
+    .infobox {
+      /*margin: 16px !important; */
+      background-color: rgb(255, 255, 255);
+      /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);*/
+    }
+
+    .suchbox_ergebnisse h3 {
+      padding: 16px;
+    }
+
+    .infoengine {
+      /*padding: 16px; */
+      color: rgb(120, 120, 120);
+      font-size: 0.8em;
+
+    }
+
+    .infobox a {
+      color: rgb(105, 131, 255);
+    }
+
+    .gsc-adBlock {
+      pointer-events: none;
+      /* via https://freefrontend.com/css-background-patterns/ : */
+      background-color: red;
+      background-image:
+        repeating-linear-gradient(45deg,
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 1) 20px,
+          transparent 0px,
+          transparent 40px);
+
+    }
+
+    .gsc-refinementBlock {
+      background-color: #EEEEEE !important;
+    }
+
+    .gsc-refinementhInactive {
+      background-color: #EEEEEE !important;
+      /* border-top: 1px solid #0B5394; */
+
+    }
+
+    .gsc-refinementhActive {
+      /* background-color: #EEEEEE !important; */
+      /* border-left: 1px solid #0B5394;
+      border-right: 1px solid #0B5394; */
+    }
+
+    .gsc-tabsArea {
+      background-color: #EEEEEE !important;
+    }
+
+    .gsc-tabhInactive {
+      background-color: #EEEEEE !important;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="suchbox_ergebnisse">
+
+    <div class="gcse-search" data-enableHistory="true" data-personalizedAds="false" data-mobileLayout="enabled" data-enableAutoComplete="true" data-refinementStyle="tab" data-webSearchResultSetSize="20" data-linkTarget="_blank"></div>
+  </div>
+  <div class="infoengine">
+    <p>Google Benutzerdefinierte Suchmaschine mit</p>
+    <li>Begrenzung auf Seiten die Google via Knowledge Graph Entities als C2C einstuft </li>
+    <li>Bevorzugung von Nachhaltigkeits-Themen</li>
+  </div>
+
+</body>
+
+</html>

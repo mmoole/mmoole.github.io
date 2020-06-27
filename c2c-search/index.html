@@ -4,7 +4,43 @@
 
 <head>
   <title>C2C flavored search engine experiment</title>
-  <script async src="https://cse.google.com/cse.js?cx=011350583942115285058:jxzsnkpq2s7"></script>
+
+  <!-- via https://github.com/davidjbradshaw/iframe-resizer  -->
+
+  <script type="text/javascript" src="js/iframeResizer.min.js"></script>
+  <script type="text/javascript">
+    iFrameResize({
+      log: true, // Enable console logging
+      enablePublicMethods: true, // Enable methods within iframe hosted page
+      resizedCallback: function(messageData) { // Callback fn when resize is received
+        $('p#callback').html(
+          '<b>Frame ID:</b> ' + messageData.iframe.id +
+          ' <b>Height:</b> ' + messageData.height +
+          ' <b>Width:</b> ' + messageData.width +
+          ' <b>Event type:</b> ' + messageData.type
+        );
+      },
+      messageCallback: function(messageData) { // Callback fn when message is received
+        $('p#callback').html(
+          '<b>Frame ID:</b> ' + messageData.iframe.id +
+          ' <b>Message:</b> ' + messageData.message
+        );
+        alert(messageData.message);
+      },
+      closedCallback: function(id) { // Callback fn when iFrame is closed
+        $('p#callback').html(
+          '<b>IFrame (</b>' + id +
+          '<b>) removed from page.</b>'
+        );
+      }
+    });
+  </script>
+
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
 
   <style>
     body {
@@ -76,16 +112,108 @@
     .gsc-tabhInactive {
       background-color: #EEEEEE !important;
     }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+
+    /* for ifram resizer */
+    iframe {
+      width: 1px;
+      min-width: 100%;
+      min-height: 300px;
+      border: 1px red;
+    }
   </style>
 
 </head>
 
-<body>
+<body onload="openCity(event, 'c2c-test1')">
+
+  <script>
+    /* via https://www.w3schools.com/howto/howto_js_tabs.asp */
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
 
   <div class="suchbox_ergebnisse">
     <h3>&infin; C2C flavored search engine experiment</h3>
-    <script async src="https://cse.google.com/cse.js?cx=011350583942115285058:jxzsnkpq2s7"></script>
-    <div class="gcse-search" data-enableHistory="true" data-personalizedAds="false" data-mobileLayout="enabled" data-enableAutoComplete="true" data-refinementStyle="tab" data-webSearchResultSetSize="20" data-linkTarget="_blank"></div>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'c2c-test1')">Search 1</button>
+      <button class="tablinks" onclick="openCity(event, 'c2c-test2')">Search 2</button>
+      <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button> -->
+    </div>
+
+    <div id="c2c-test1" class="tabcontent">
+      <iframe id="Iframe1" src="search_1.html" scrolling="no"></iframe>
+      <script>
+        iFrameResize({
+          log: true
+        }, '#Iframe1')
+      </script>
+    </div>
+
+    <div id="c2c-test2" class="tabcontent">
+      <iframe id="Iframe2" src="search_2.html" scrolling="no"></iframe>
+      <script>
+        iFrameResize({
+          log: true
+        }, '#Iframe2')
+      </script>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+
+
   </div>
 
   <div class="infobox">An experimental and temporary project.<br />
