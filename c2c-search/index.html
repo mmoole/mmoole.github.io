@@ -116,7 +116,8 @@
     /* Style the tab */
     .tab {
       overflow: hidden;
-      border: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       background-color: #f1f1f1;
     }
 
@@ -151,7 +152,7 @@
     }
 
 
-    /* for ifram resizer */
+    /* for iframe resizer */
     iframe {
       width: 1px;
       min-width: 100%;
@@ -187,6 +188,7 @@
     <div class="tab">
       <button class="tablinks" onclick="openCity(event, 'c2c-test1')">Search 1</button>
       <button class="tablinks" onclick="openCity(event, 'c2c-test2')">Search 2</button>
+      <button class="tablinks" onclick="openCity(event, 'c2c-test3')">Search 3</button>
       <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button> -->
     </div>
 
@@ -205,6 +207,15 @@
         iFrameResize({
           log: true
         }, '#Iframe2')
+      </script>
+    </div>
+
+    <div id="c2c-test3" class="tabcontent">
+      <iframe id="Iframe3" src="search_3.html" scrolling="no"></iframe>
+      <script>
+        iFrameResize({
+          log: true
+        }, '#Iframe3')
       </script>
     </div>
 
