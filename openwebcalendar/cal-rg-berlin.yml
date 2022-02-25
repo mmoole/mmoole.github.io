@@ -5,7 +5,7 @@
   "title": "C2C RG Berlin",
   "language": "de",
   "target": "_blank",
-  "css": "  div [name=\"month_tab\"]{\n    left: 0px!important;\n  }\n  div [name=\"agenda_tab\"]{\n    left: 90px!important;\n  }",
+  "css": "div[name=\"month_tab\"]{\n left: 0px!important;\n }\ndiv[name=\"agenda_tab\"]{\n left: 90px!important;\n }",
   "tabs": [
     "month",
     "agenda"
