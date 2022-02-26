@@ -5,7 +5,7 @@
   "title": "C2C RG Berlin",
   "language": "de",
   "target": "_blank",
-  "css": "div[name=\"month_tab\"]{left: 0px!important;}\ndiv[name=\"agenda_tab\"]{left: 90px!important;}",
+  "css": "div[name=\"month_tab\"]{left: 0px!important;}\ndiv[name=\"agenda_tab\"]{left: 90px!important;}\ndiv.dhx_qi_big_icon.icon_delete {display:none;}\ndiv.dhx_qi_big_icon.icon_details {display:none;}\ndiv.dhx_cal_qi_content{padding-bottom:0px!important;padding-top:0px!important;}\n",
   "tabs": [
     "month",
     "agenda"
