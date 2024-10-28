@@ -1,15 +1,10 @@
 {
-  "url": [
-    "https://p2c2c.2ix.de/view2ics/expcal_a3.php?52799598"
-  ],
+  "url": ["https://p2c2c.2ix.de/view2ics/expcal_a3.php?52799598"],
   "title": "Cradle to Cradle NGO RG Berlin",
   "language": "de",
   "target": "_blank",
-div[name=month_tabXX]{left:0!important}div[name=agenda_tabXX]{left:90px!important}div.dhx_qi_big_icon.icon_delete{display:none}div.dhx_qi_big_icon.icon_details{display:none}div.dhx_cal_qi_content{padding-bottom:0!important;padding-top:0!important}.dhx_agenda_line span{display:flex!important;lex-wrap:wrap}.dhx_agenda_area div[role=row]{height:70px!important}.dhx_cal_tab.active,.dhx_cal_tab.active:hover,.event{background-color:#f25d63;color:#fff}.dhx_cal_tab,.dhx_cal_today_button,.dhx_month_head{color:#f25d63;border-color:#f25d63}.dhx_cal_tab,.dhx_cal_tab.active{border-color:#f25d63}div.dhx_cal_qi_tcontent{color:#fff;white-space:wrap!important;text-wrap-mode:wrap!important}div.dhx_cal_qi_tcontent::before{display:none!important}div.dhx_cal_qi_tdate{color:#fff}div.dhx_cal_qi_tcontent>div>a{color:#fff!important}div.dhx_cal_qi_content>a{color:#505050!important;font-weight:700!important}.dhx_cal_event_clear{color:#fff!important}.dhx_cal_qi_title{background-color:#51c1ae!important}.dhx_cal_qi_content{overflow-y:scroll;max-height:300px}.dhtmlXTooltip{display:none!important}.dhx_cal_quick_info{positionxx:sticky!important;z-index:100!important}.dhx_cal_event_line_end,.dhx_cal_event_line_start{padding-left:0!important;min-width:14.2%!important}
+  "css": "div[name=month_tabXX]{left:0!important}div[name=agenda_tabXX]{left:90px!important}div.dhx_qi_big_icon.icon_delete{display:none}div.dhx_qi_big_icon.icon_details{display:none}div.dhx_cal_qi_content{padding-bottom:0!important;padding-top:0!important}.dhx_agenda_line span{display:flex!important;lex-wrap:wrap}.dhx_agenda_area div[role=row]{height:70px!important}.dhx_cal_tab.active,.dhx_cal_tab.active:hover,.event{background-color:#f25d63;color:#fff}.dhx_cal_tab,.dhx_cal_today_button,.dhx_month_head{color:#f25d63;border-color:#f25d63}.dhx_cal_tab,.dhx_cal_tab.active{border-color:#f25d63}div.dhx_cal_qi_tcontent{color:#fff;white-space:wrap!important;text-wrap-mode:wrap!important}div.dhx_cal_qi_tcontent::before{display:none!important}div.dhx_cal_qi_tdate{color:#fff}div.dhx_cal_qi_tcontent>div>a{color:#fff!important}div.dhx_cal_qi_content>a{color:#505050!important;font-weight:700!important}.dhx_cal_event_clear{color:#fff!important}.dhx_cal_qi_title{background-color:#51c1ae!important}.dhx_cal_qi_content{overflow-y:scroll;max-height:300px}.dhtmlXTooltip{display:none!important}.dhx_cal_quick_info{positionxx:sticky!important;z-index:100!important}.dhx_cal_event_line_end,.dhx_cal_event_line_start{padding-left:0!important;min-width:14.2%!important}",
   "skin": "terrace",
   "tab": "agenda",
-  "tabs": [
-    "month",
-    "agenda"
-  ]
+  "tabs": ["month", "agenda"],
 }
